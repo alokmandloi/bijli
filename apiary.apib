@@ -43,8 +43,8 @@ Data about user being created. With following attributes are:
 
         { "isSuccess": true }
 
-## Note [/notes/{id}]
-A single Note object with all its details
+## getEvent [/notes/{id}]
+A list of outages in within a given time period 
 
 + Parameters
     + id (required, number, `1`) ... Numeric `id` of the Note to perform action with. Has example value.
@@ -59,6 +59,3 @@ A single Note object with all its details
     + Body
 
             { "id": 2, "title": "Pick-up posters from post-office" }
-
-### Remove a Note [DELETE]
-+ Response 204
