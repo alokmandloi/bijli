@@ -17,18 +17,18 @@ This is used to start a session and assign a unique id to each user
             "user_id":"23425245234sflgkg"
         }
 
-## Bijli Collection [/notes]
+## Bijli Collection [/reportEvent]
 
 ### Create a Electricity Report [POST]
 
 Data about user being created. With following attributes are:
 
-    + `isBijli` ... Set to false if there is an outage
+    + `powerFail` ... Set to false if there is an outage
     + `Location` (optional) ... age of the user
 + Request (application/json)
 
         { 
-            "isBijli": true,
+            "powerFail": true,
             "Location": {
                 "coordinate":{
                     "latitude": -78.75,
