@@ -9,15 +9,23 @@ Notes related resources of the **Bijli API**
 ## Bijli Collection [/notes]
 
 ### Create a Electricity Report [POST]
+
+Data about user being created. With following attributes are:
+
+    + `isBijli` ... Set to false if there is an outage
+    + `Location` (optional) ... age of the user
 + Request (application/json)
 
         { 
             "isBijli": true,
             "Location": {
-                "latitude": -78.75,
-                "longitude": 20.4
-            },
-            "areaCode":"388001"
+                "coordinate":{
+                    "latitude": -78.75,
+                    "longitude": 20.4
+                }
+                "areaCode":"388001"
+            }
+            
         }
 
 + Response 201 (application/json)
