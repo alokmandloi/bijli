@@ -17,7 +17,7 @@ This is used to start a session and assign a unique id to each user
             "user_id":"23425245234sflgkg"
         }
 
-## Bijli Collection [/reportEvent]
+## Reporting [/reportEvent]
 
 ### Create a Electricity Report [POST]
 
@@ -53,10 +53,28 @@ A list of outages in within a given time period
 ### Retrieve Events [GET]
 + Response 200 (application/json)
 
-    + Header
-
-            X-My-Header: The Value
-
     + Body
 
-            { "id": 2, "title": "Pick-up posters from post-office" }
+            {   "events" : [
+                                {"powerFail": true,
+                                    "location": {
+                                        "coordinate":{
+                                            "latitude": -78.75,
+                                            "longitude": 20.4
+                                        },
+                                        "areaCode":"388001"
+                                    }
+                                },
+                                {"powerFail": true,
+                                    "location": {
+                                        "coordinate":{
+                                            "latitude": -78.75,
+                                            "longitude": 20.4
+                                        },
+                                        "areaCode":"388001"
+                                    }
+                                }
+                            ]
+                
+            }
+            }
