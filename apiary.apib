@@ -30,7 +30,7 @@ Data about user being created. With following attributes are:
         { 
             "powerFail": true,
             "location": {
-                "source":"areaCode"
+                "source":"areaCode",
                 "coordinate":{
                     "latitude": -78.75,
                     "longitude": 20.4
@@ -58,6 +58,7 @@ A list of outages in within a given time period
             {   "events" : [
                                 {"powerFail": true,
                                     "location": {
+                                        "source":"coordinate",
                                         "coordinate":{
                                             "latitude": -78.75,
                                             "longitude": 20.4
@@ -67,6 +68,7 @@ A list of outages in within a given time period
                                 },
                                 {"powerFail": true,
                                     "location": {
+                                        "source":"areaCode",
                                         "coordinate":{
                                             "latitude": -78.75,
                                             "longitude": 20.4
