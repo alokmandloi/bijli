@@ -43,10 +43,13 @@ Data about user being created. With following attributes are:
 
         { "isSuccess": true }
 
-## getEvents [/getEvents]
+## getEvents [/getEvents/{start}&{end}]
 A list of outages in within a given time period 
 
-
++ Parameters
+    + start (required, date, `1`) ... Start of time period for which the data is required 
+    + end ( required, date, `1`) ... End of time period for which data is required
+    
 ### Retrieve Events [GET]
 + Response 200 (application/json)
 
